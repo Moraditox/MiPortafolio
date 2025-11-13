@@ -8,8 +8,8 @@
     <script src="scripts.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>HSM | Desarrollador Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <title>HSM | Desarrollador Web</title>
+    <script src="https://kit.fontawesome.com/c7052076f6.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- Pantalla de carga -->
@@ -34,21 +34,43 @@
     <!-- Página principal -->
     <header>
         <div class="header-content">
-            <a href="#" class="logo">&lt;<span class="nombre">HMS</span><span class="barra">&#92;</span>&gt;</a>
+            <a href="#home" class="logo">&lt;<span class="nombre">HMS</span><span class="barra">&#92;</span>&gt;</a>
             <div class="nav-content">
                 <ul>
                     <li><a href="#">Sobre mí</a></li>
                     <li><a href="#">Proyectos</a></li>
                     <li><a href="#">Tecnologías</a></li>
                     <li><a href="#">Contactame</a></li>
-                </u>
+                </ul>
             </div>
         </div>
     </header>
 
     <main>
-        <h1>🏠 Bienvenido a mi página</h1>
-        <p>Tu contenido principal va aquí.</p>
+        <div id="home" class="home">
+            <section class="titleNext-content">
+                <article class="title-content">
+                    <h1 class="title">¡Hey! Soy</h1>
+                    <h1 class="title"><span class="fisrt-letter">H</span>éctor 
+                                      <span class="fisrt-letter">M</span>ora 
+                                      <span class="fisrt-letter">S</span>ánchez</h1>
+                                      <div class="typing-wrapper">
+                    <div class="typing-wrapper">
+                        <div class="typing-container">
+                                <span class="text"></span><span class="cursor">|</span>
+                        </div>
+                    </div>                       
+                </article>
+                <article class="proyects-explorer-arrow">
+                    <p>Explora más sobre mí</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </article>
+            </section>
+            <section class="img-content">
+                <img src="img/image-personal.png" alt="imagen personal">
+                <canvas></canvas>
+            </section>
+        </div>
     </main>
 </body>
 </html>

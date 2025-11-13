@@ -158,7 +158,7 @@
 
   /* --- Contenido principal --- */
   body {
-    background-color: #CCCCCC;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, #CCCCCC 100%);;
   }
 
   header {
@@ -224,7 +224,99 @@
     text-decoration: none;
   }
 
+  /*MAIN*/
   main {
     margin-top: 0;
-    height: 100000px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .titleNext-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 70px;
+    font-weight: 400;
+    padding-left: 5rem;
+  }
+
+  .title:first-child {
+    margin-left: 13rem;
+    margin-top: 5rem;
+    margin-bottom: -1rem;
+  }
+
+  .fisrt-letter {
+    color: var(--card-color);
+  }
+
+  .typing {
+    width: fit-content;
+    border-right: 2px solid black;    /* cursor */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .typing-wrapper {
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .typing-container {
+    font-size: 1.3rem;
+    font-family: monospace;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .text {
+    display: inline-block;
+  }
+  
+  .cursor {
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: bold;
+    animation: blink .7s infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  .proyects-explorer-arrow {
+    margin-left: 5.5rem;
+    margin-top: 4rem;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyects-explorer-arrow i {
+    color: #00AAFF;
+    font-size: 70px;
+  }
+
+  .img-content img {
+    width: 340px;
+    border-radius: 30px;
+    filter: drop-shadow(12px 10px 10px #00aaff71 );
+    position: absolute;
+    transform: translate(55%, 10%);
   }

@@ -30,3 +30,38 @@ const interval = setInterval(() => {
     }, 500);
   }
 }, 200);
+
+// Animacion de escritura titulo
+const frases = [
+  "Técnico Superior en Desarrollo de Aplicaciones Web.",
+  "Desarrollador Full Stack."
+];
+
+const texto = document.querySelector(".text");
+let i = 0;  // frase
+let j = 0;  // letra
+let borrando = false;
+
+function type() {
+  const frase = frases[i];
+
+  if (!borrando) {
+    texto.textContent = frase.substring(0, j++);
+    if (j > frase.length) {
+      borrando = true;
+      setTimeout(type, 2500);
+      return;
+    }
+  } else {
+    texto.textContent = frase.substring(0, j--);
+    if (j < 0) {
+      borrando = false;
+      i = (i + 1) % frases.length;
+    }
+  }
+
+  const velocidad = borrando ? 60 : 60;
+  setTimeout(type, velocidad);
+}
+
+type();
